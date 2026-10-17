@@ -1,0 +1,39 @@
+{
+  "name": "@topaisaas/tokenprune-wasm",
+  "version": "1.0.0",
+  "description": "Deterministic AST code context pruner for LLMs and AI coding agents. Collapses implementation bodies into structural interfaces, saving 50% to 70% of API tokens in Claude, Cursor, and Copilot.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "tokenprune": "dist/cli.js",
+    "tokenprune-wasm": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "action.yml",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "esbuild bin/cli.js --bundle --platform=node --format=esm --outfile=dist/cli.js && esbuild src/index.ts --bundle --platform=node --format=esm --outfile=dist/index.js",
+    "start": "node dist/cli.js",
+    "test": "node --test tests/tokenprune.test.js"
+  },
+  "keywords": [
+    "token-pruning",
+    "llm-context",
+    "claude-code",
+    "cursor",
+    "prompt-optimization",
+    "ast-pruning",
+    "typescript",
+    "finops",
+    "token-optimizer",
+    "mcp-tool"
+  ],
+  "author": "TopAI Sovereign Studio",
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,29 @@
+name: 'TokenPrune Wasm Context Optimizer'
+description: 'Deterministic AST Code Pruner for LLMs & AI Coding Agents. Collapses function bodies to save 50%-70% of API tokens.'
+author: 'TopAI Sovereign Studio'
+branding:
+  icon: 'scissors'
+  color: 'blue'
+
+inputs:
+  path:
+    description: 'Path to source file or directory to prune'
+    required: true
+  output_file:
+    description: 'Target path for pruned context file'
+    required: false
+    default: 'llm_context_pruned.ts'
+  license_key:
+    description: 'Offline Ed25519 commercial license key'
+    required: false
+    default: ''
+
+outputs:
+  tokens_saved:
+    description: 'Estimated number of tokens saved'
+  savings_ratio:
+    description: 'Percentage of tokens reduced'
+
+runs:
+  using: 'node20'
+  main: 'dist/cli.js'
