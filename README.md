@@ -59,7 +59,7 @@ export class SessionService {
 
 - **Community Free Tier**: Up to 10 files pruned per execution.
 - **Pro Lifetime**: Unlimited files and directories.
-- **Instant 1-Click Unblock**: [Purchase License on Polar.sh](https://buy.polar.sh/polar_cl_tokenprune_placeholder) ($29 one-time lifetime).
+- **Instant 1-Click Unblock**: [Purchase License on Polar.sh](https://buy.polar.sh/polar_cl_BeGjZghhPIilCdSBQGhvIFd2o8MyhngRnpZ0F34etCB) ($29 one-time lifetime).
 - **Emergency Production Hotfix Bypass**: Append `--emergency-pass-24h` to bypass paywalls for 24 hours during critical hotfixes.
 
 ---

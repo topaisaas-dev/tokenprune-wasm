@@ -72,7 +72,7 @@ const paywallStatus = InflowPaywall.evaluate({
   metricName: 'source files pruned',
   currentValue: filesToProcess.length,
   freeLimit: license.maxFilesPerRun,
-  checkoutUrl: 'https://buy.polar.sh/polar_cl_tokenprune_placeholder',
+  checkoutUrl: 'https://buy.polar.sh/polar_cl_BeGjZghhPIilCdSBQGhvIFd2o8MyhngRnpZ0F34etCB',
   priceText: '$29 one-time lifetime'
 }, license.valid, hasEmergencyGrace);
 
